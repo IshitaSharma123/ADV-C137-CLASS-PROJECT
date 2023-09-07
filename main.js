@@ -36,7 +36,7 @@ function gotResult(error, results) {
 function draw() {
     image(video, 0, 0, 480, 380);
     if(status != "") {
-        objectDetector.detect(vdeo, gotResult);
+        objectDetector.detect(video, gotResult);
 
         for (i = 0; i < objects.length; i++) {
             document.getElementById("status").innerHTML = "Status: Objects Detected!";
